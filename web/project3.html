@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Project 3</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="project3.css">
+    </head>
+
+    <body>
+        <h2>Cảnh báo đột nhập: <span id="canhbao">Đang xác định ...</span></h2>
+        <h2>Nhiệt độ: <span id="nhietdo">00</span></h2>
+        <h2>Độ ẩm: <span id="doam">00</span></h2>
+        <h2>Trạng thái đèn</h2>
+        <img id="den" class="img in top" src="./led_on.jpg" alt="Card imgge" style="width: 200px">
+        <h2>Điều khiển máy bơm</h2>
+        <div>
+            <button id="btnOnId_01">ON</button>
+            <button id="btnOffId_01">OFF</button>
+        </div>
+        <h2>Trạng thái máy bơm: <span id="maybom">Đang xác định...</span></h2>
+        <div class="thucan">
+            <label for="kl">Nhập giá trị khối lượng</label>
+            <input type="number" id="kl" placeholder="don vi la gam">
+            <input type="submit" value="Ok" onclick="onClick()">
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+        <script src="project3.js"></script>
+    </body>
+</html>
